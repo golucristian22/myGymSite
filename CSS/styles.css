@@ -1,0 +1,67 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Merriweather", serif;
+}
+
+:root {
+    /* Colors */
+    --color-primary: #000;
+    --color-secondary: #fff;
+    --color-accent: rgb(186, 150, 91);
+
+    /* Others */
+    --ls: 0.5px;
+    --lsMobile: 1px;
+}
+
+.logo {
+    padding: 30px;
+    width: 80px;
+    height: 80px;
+}
+
+.logo__border {
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+h1 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+}
+
+.enchanted {
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: var(--ls);
+}
+
+/* Section Introduction */
+.introduction {
+    margin: 2rem 3rem;
+}
+
+.i-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.i-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+}
+
+.i-about p {
+    font-size: 1.8rem;
+    letter-spacing: var(--lsMobile);
+    text-align: center;
+    line-height: 3rem;
+}
