@@ -1,0 +1,126 @@
+/* Section */
+.section-name {
+    position: relative;
+    margin-top: 2rem;
+}
+
+/* -Container */
+.container {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-rows: repeat(2, 300px);
+}
+
+@media screen and (min-width: 900px) {
+    .section-background {
+        background-color: #888;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+
+    .container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+}
+
+/* -Content */
+.section-content {
+    padding: 5rem 1.5rem;
+    background-color: #fff;
+}
+
+.section-header {
+    padding: 0 4.6rem;
+    text-align: center;
+}
+
+.section-content h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    letter-spacing: var(--lsMobile);
+    margin: 2rem 0;
+}
+
+.section-content .upper {
+    margin-top: 6rem;
+}
+
+.section-about p {
+    padding: 1rem;
+    font-size: 1.3rem;
+    line-height: 25px;
+}
+
+.link {
+    font-size: 1.8rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 500px) {
+    .section-content {
+        padding: 5rem 3rem;
+    }
+}
+
+@media screen and (min-width: 630px) {
+    .section-content{
+        max-width: 630px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .section-content {
+        position: relative;
+        top: 500px;
+        max-width: 800px;
+        z-index: 1;
+        box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.3);
+        margin: 0 auto;
+    }
+
+    .section-about {
+        max-width: 600px;
+        margin: 0 auto
+    }
+}
+
+@media screen and (min-width: 1200px) {
+.section-background {
+        height: 900px;
+}
+
+.section-container {
+    grid-template-rows: repeat(2, 450px);
+    max-width: 1500px;
+}
+
+.item img {
+    object-fit: cover;
+}
+
+.section-content {
+    top: 800px
+}
+}
+
+@media screen and (min-width: 1500px) {
+.section-container {
+   left: 0;
+   right: 0;
+   margin-left: auto;
+   margin-right: auto;
+}
+}
