@@ -450,15 +450,31 @@ h4 {
 }
 
 /* Section News */
+@media screen and (min-width: 900px) {
+    .news {
+        position: relative;
+        top: 100px;
+        max-width: 800px;
+        z-index: 1;
+        box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.3);
+        margin: 0 auto;
+    }    
+}
+
 /* #News Container */
+.position-top {
+    object-position: 50% 20%;
+}
+
 .news-container {
-    width: 100%;
-    max-width: 500px;
-    height: 500px;
-    background: url(/Content/images/p5.jpg);
-    background-position: center;
-    background-size: cover;
+    height: 300px;
     position: relative;
+}
+
+.news-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .nc-overlay {
@@ -482,10 +498,11 @@ h4 {
     padding: 0.1rem 0;
     margin: 0 auto;
     position: absolute;
-    bottom: 6px;
+    bottom: 8px;
     right: 0;
     left: 0;
     margin: 0 auto;
+    opacity: 0.9;
 }
 
 .news-about h4,
@@ -504,3 +521,85 @@ p {
     text-transform: uppercase;
     color: #aaa;
 }
+
+@media screen and (min-width: 500px) {
+    .news-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .news-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+    }
+}
+
+/* News Header */
+.n-header {
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.n-header h3 {
+    font-size: 1.4rem;
+    padding: 0 4.6rem;
+    letter-spacing: var(--lsMobile);
+    margin: 1.5rem 0;
+}
+
+.n-header p {
+    font-size: 1.2rem;
+    line-height: 20px;
+}
+
+/* News Extras */
+.fiStars {
+    margin: 2rem 0;
+}
+
+.ne-image {
+    width: 20px;
+    height: 20px;
+}
+
+.ne-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: all 0.2s ease-out;
+}
+
+.ne-icon:hover {
+    box-shadow: 0 0 0 10px #461685;
+}
+
+.news-extras {
+    background-color: #3a3a3a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    text-align: center;
+    color: #fff;
+}
+
+.news-extras p {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: var(--lsMobile);
+}
+
+.news-icons {
+    padding: 2rem 0;
+}
+
+.ne-link {
+    margin-right: 2rem;
+}
+
+
