@@ -602,4 +602,46 @@ p {
     margin-right: 2rem;
 }
 
+/* Contact */
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-title {
+    font-size: 2rem;
+    padding-top: 3rem;
+    margin: 0;
+}
+
+.c-btn {
+    font-size: 1.8rem;
+    background-color: transparent;
+    border: 1px solid var(--color-accent);
+    padding: .8rem 1.4rem;
+    letter-spacing: var(--lsMobile);
+    margin: 2rem 0;
+    transition: all 0.25s ease-out;
+}
+
+.c-btn:hover {
+    color: #000;
+    border-color: #000;
+}
+
+.c-contact {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: var(--lsMobile);
+    color: #666;
+    transition: all .25s ease-out;
+}
+
+.c-contact:hover {
+    color: #000;
+}
 
