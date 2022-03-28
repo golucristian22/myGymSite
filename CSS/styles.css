@@ -59,7 +59,7 @@ h1 {
 
 /* Section Introduction */
 .introduction {
-    margin: 2rem 3rem;
+    margin: 6rem 3rem;
 }
 
 .i-container {
@@ -112,6 +112,10 @@ h1 {
 }
 
 @media screen and (min-width: 900px) {
+    .welcome {
+        height: 184rem;
+    }
+
     .photos-background {
         background-color: #888;
         width: 100%;
@@ -182,7 +186,7 @@ h1 {
 @media screen and (min-width: 900px) {
     .w-content {
         position: relative;
-        top: 500px;
+        top: 84rem;
         max-width: 800px;
         z-index: 1;
         box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.3);
@@ -207,10 +211,6 @@ h1 {
 
 .photo img {
     object-fit: cover;
-}
-
-.w-content {
-    top: 800px
 }
 }
 
@@ -280,6 +280,15 @@ h1 {
 
 .f3 {
     background-image: url(/Content/images/n1.jpg);
+}
+
+@media screen and (min-width: 900px) {
+    .f2 {
+        background-image: url(/Content/images/n2-big.jpg);
+    }
+    .f3 {
+        background-image: url(/Content/images/n1-big.jpg);
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -376,8 +385,9 @@ h1 {
     .a-content {
         padding-top: 3rem;
         position: relative;
-        top: 100px;
+        top: -10rem;
         max-width: 800px;
+        height: 82rem;
         z-index: 1;
         box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.3);
         margin: 0 auto;
@@ -470,9 +480,11 @@ h4 {
 /* Section News */
 @media screen and (min-width: 900px) {
     .news {
+        background-color: #fff;
         position: relative;
-        top: 100px;
+        top: -6rem;
         max-width: 800px;
+        height: 150rem;
         z-index: 1;
         box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.3);
         margin: 0 auto;
@@ -626,11 +638,11 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 6rem;
 }
 
 .c-title {
     font-size: 2rem;
-    padding-top: 3rem;
     margin: 0;
 }
 
