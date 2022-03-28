@@ -17,6 +17,15 @@ body {
     --lsMobile: 1px;
 }
 
+.fit-content {
+    width: fit-content;
+    height: fit-content;
+}
+
+.center{
+    margin: 0 auto;
+}
+
 .logo {
     padding: 30px;
     width: 80px;
@@ -645,3 +654,118 @@ p {
     color: #000;
 }
 
+@media screen and (min-width: 500px) {
+    .c-btn {
+        padding: 2.5rem 4rem;
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: #3a3a3a;
+}
+
+.f-content::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: #aaa;
+    margin-top: 2rem;
+    opacity: 0.5;
+
+}
+
+.f-list {
+    column-count: 2;
+    list-style: none;
+    padding: 3rem 3rem 1rem 3rem;
+}
+
+.f-list li {
+    margin: .7rem 0;
+    width: 50%;
+}
+
+.f-item {
+    color: #aaa;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: var(--lsMobile);
+    text-align: left;
+    transition: all 0.2s ease-out;
+}
+
+.f-item:hover {
+    color: goldenrod;
+}
+
+.f-btn {
+    background-color: transparent;
+    color: #aaa;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: var(--lsMobile);
+    text-align: center;
+    text-transform: uppercase;
+    border: .5px solid #aaa;
+    padding: 1.8rem 2.2rem;
+    transition: all 0.2s ease-out;
+}
+
+.f-btn:hover {
+    color: goldenrod;
+    border-color: goldenrod;
+}
+
+@media screen and (min-width: 600px) {
+    .f-list {
+        column-count: unset;
+        padding: 3rem 3rem 0 3rem;
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .f-list li {
+        display: inline-block;
+        margin: 1rem 1.2rem;
+        width: auto;
+    }
+
+    .f-btn {
+        margin-top: 2rem;
+    }
+}
+
+/* Footer Credits */
+.f-credit {
+    padding: 2rem;
+}
+
+.social-media {
+    margin: 1rem auto;
+    width: fit-content;
+}
+
+.credits {
+    color: #aaa;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.c-link {
+    color: #999;
+    text-decoration: none;
+    transition: all .2s ease-out;
+}
+
+.c-link:hover {
+    color: goldenrod;
+}
