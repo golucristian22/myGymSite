@@ -231,7 +231,6 @@ h1 {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    background-image: url(/Content/images/fxc-1.jpg);
     position: relative;
     overflow: hidden;
     color: #fff;
@@ -245,8 +244,6 @@ h1 {
 .fixed-content {
     z-index: 1;
     position: relative;
-    top: -100px;
-    left: -15px;
     text-align: center;
 }
 
@@ -271,6 +268,18 @@ h1 {
     width: 100%;
     background-color: rgba(36, 44, 54, 0.6);
     z-index: 0;
+}
+
+.f1 {
+    background-image: url(/Content/images/fxc-1.jpg);
+}
+
+.f2 {
+    background-image: url(/Content/images/n2.jpg);
+}
+
+.f3 {
+    background-image: url(/Content/images/n1.jpg);
 }
 
 @media screen and (min-width: 1200px) {
