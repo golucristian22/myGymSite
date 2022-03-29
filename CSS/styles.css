@@ -790,3 +790,199 @@ p {
 .c-link:hover {
     color: goldenrod;
 }
+
+/* Navigation */
+/* -Burger Menu */
+.menu-btn {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu-content {
+    content: "";
+    background-color: var(--color-accent);
+    height: 3px;
+    width: 30px;
+    border-radius: 50px;
+    transition: all .5s ease-out;
+}
+
+.menu-content::before,
+.menu-content::after {
+    content: "";
+    position: absolute;
+    background-color: var(--color-accent);
+    height: 3px;
+    width: 30px;
+    border-radius: 50px;
+    transition: all .5s ease-out;
+}
+
+.menu-content::before {
+    transform: translateY(-10px);
+}
+
+.menu-content::after {
+    transform: translateY(10px);
+}
+
+/* --Menu Animation */
+.menu-btn.open .menu-content{
+    background-color: transparent;
+    transform: rotate(180deg);
+}
+
+.menu-btn.open .menu-content::before {
+    transform: rotate(135deg) ;
+}
+.menu-btn.open .menu-content::after {
+    transform: rotate(-135deg);
+}
+
+/* -Nav */
+.na-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #3a3a3a;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 99;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 1rem 1.8rem;
+}
+
+.nac-text {
+    display: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: var(--lsMobile);
+    color: #aaa;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 1rem 1.8rem;
+    transition: all 0.25s ease-out;
+}
+
+.nac-text:hover {
+    color: #fff;
+}
+
+.na-text {
+    font-size: 1.4rem;
+    letter-spacing: var(--lsMobile);
+    margin: 0 0.5rem;
+}
+
+@media screen and (min-width: 750px) {
+    .na-container {
+        justify-content: space-between;
+    }
+    .nac-text {
+        display: block;
+    }
+}
+
+/* --Content */
+.na-content {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    background-color: rgba(58,58,58,0.9);
+    height: 100vh;
+    width: 100vw;
+    transform: translateY(-25px);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+
+.na-content.extended {
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (min-width: 500px) {
+    .na-content {
+        transform: translateY(0) translateX(100px);
+        width: 28rem;
+    }
+}
+
+.nac-container {
+    margin: 2rem 2.2rem;
+}
+.na-list {
+    list-style: none;
+    padding: 0;
+}
+
+.na-list li {
+    margin: 1.6rem 0;
+}
+
+.na-item {
+    color: #aaa;
+    font-size: 2.2rem;
+    font-weight: 500;
+    letter-spacing: var(--lsMobile);
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.25s ease-out;
+}
+
+.na-item:hover {
+    color: #fff;
+}
+
+.adress {
+    margin-top: 3rem;
+    color: rgb(189, 188, 188);
+    font-size: 1.3rem;
+    letter-spacing: var(--lsMobile);
+}
+
+.adress p {
+    line-height: 22px;
+    margin: 0;
+}
+
+.number {
+    margin-top: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.number p {
+    color:rgb(189, 188, 188);
+    font-size: 1.3rem;
+    margin: 0 1rem 0 0;
+}
+
+.number a {
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: var(--lsMobile);
+    text-decoration: none;
+    transition: all 0.25s ease-out;
+}
+
+.number:hover a {
+    color: #fff;
+}
