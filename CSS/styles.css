@@ -200,6 +200,14 @@ h1 {
 }
 
 @media screen and (min-width: 1200px) {
+.welcome {
+    height: 182rem;
+}
+
+.w-content {
+    top: 84rem
+}
+
 .photos-background {
         height: 900px;
 }
